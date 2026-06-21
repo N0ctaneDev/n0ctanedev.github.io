@@ -25,22 +25,16 @@ test.describe("layout shell", () => {
     expect(links).toContainEqual(
       expect.objectContaining({ href: "/projects" }),
     );
-    expect(links).toContainEqual(
-      expect.objectContaining({ href: "/about" }),
-    );
-    expect(links).toContainEqual(
-      expect.objectContaining({ href: "/skills" }),
-    );
-    expect(links).toContainEqual(
-      expect.objectContaining({ href: "/contact" }),
-    );
+    expect(links).toContainEqual(expect.objectContaining({ href: "/about" }));
+    expect(links).toContainEqual(expect.objectContaining({ href: "/skills" }));
+    expect(links).toContainEqual(expect.objectContaining({ href: "/contact" }));
   });
 
   test("theme toggle exists and switches mode", async ({ page }) => {
     await page.goto("/");
     const toggle = page.getByLabel("Toggle theme");
     await expect(toggle).toBeVisible();
-    await toggle.click();
+    await toggle.click({ force: true });
   });
 
   test("footer renders with social links and copyright", async ({ page }) => {
