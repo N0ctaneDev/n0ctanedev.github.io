@@ -1,0 +1,212 @@
+{
+  "name": "N0ctane",
+  "tagline": "Full-Stack Developer & Systems Architect",
+  "url": "https://n0ctanedev.github.io",
+
+  "nav": {
+    "links": [
+      { "label": "Home", "href": "/" },
+      { "label": "Projects", "href": "/projects" },
+      { "label": "Skills", "href": "/skills" },
+      { "label": "About", "href": "/about" },
+      { "label": "Contact", "href": "/contact" }
+    ]
+  },
+
+  "hero": {
+    "greeting": "Hi, I'm N0ctane",
+    "cta": { "label": "View Projects", "href": "/projects" }
+  },
+
+  "about": {
+    "paragraphs": [
+      "I'm a full-stack developer with a passion for building high-performance, scalable web applications. With years of experience across the stack, I specialize in crafting elegant solutions to complex problems.",
+      "My approach combines clean architecture with pragmatic engineering — writing code that's not just functional but maintainable, testable, and a pleasure to work with. I believe the best systems are built with equal parts discipline and creativity."
+    ],
+    "avatar": "/avatar.jpg"
+  },
+
+  "skills": [
+    {
+      "category": "Frontend",
+      "items": [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Framer Motion"
+      ]
+    },
+    {
+      "category": "Backend",
+      "items": ["Node.js", "Python", "PostgreSQL", "Redis", "GraphQL"]
+    },
+    {
+      "category": "DevOps & Tools",
+      "items": ["Docker", "Linux", "Git", "CI/CD", "AWS"]
+    }
+  ],
+
+  "projects": [
+    {
+      "slug": "project-one",
+      "title": "Project One",
+      "description": "A full-stack application built with Next.js and PostgreSQL featuring real-time collaboration, advanced search, and a responsive design system.",
+      "shortDescription": "Real-time collaborative platform",
+      "type": "Full-Stack",
+      "collaboration": "Solo",
+      "groupSize": 1,
+      "openSource": true,
+      "status": "active",
+      "daysTaken": 45,
+      "tech": ["Next.js", "TypeScript", "PostgreSQL", "WebSocket"],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/n0ctanedev/project-one"
+        },
+        { "label": "Live Demo", "url": "https://project-one.vercel.app" }
+      ],
+      "thumbnail": "/projects/project-one.jpg",
+      "featured": true
+    },
+    {
+      "slug": "project-two",
+      "title": "Project Two",
+      "description": "An open-source CLI tool for scaffolding modern web projects with built-in linting, testing, and deployment configuration.",
+      "shortDescription": "CLI scaffolding tool",
+      "type": "Tooling",
+      "collaboration": "Solo",
+      "groupSize": 1,
+      "openSource": true,
+      "status": "active",
+      "daysTaken": 30,
+      "tech": ["Node.js", "TypeScript", "Commander.js"],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/n0ctanedev/project-two"
+        },
+        { "label": "NPM", "url": "https://www.npmjs.com/package/project-two" }
+      ],
+      "thumbnail": "/projects/project-two.jpg",
+      "featured": true
+    },
+    {
+      "slug": "project-three",
+      "title": "Project Three",
+      "description": "A dashboard application for monitoring infrastructure metrics with real-time data visualization and alerting.",
+      "shortDescription": "Infrastructure monitoring dashboard",
+      "type": "Full-Stack",
+      "collaboration": "Team",
+      "groupSize": 3,
+      "openSource": false,
+      "status": "completed",
+      "daysTaken": 90,
+      "tech": ["React", "D3.js", "Python", "Docker"],
+      "links": [
+        { "label": "Live Demo", "url": "https://project-three.vercel.app" }
+      ],
+      "thumbnail": "/projects/project-three.jpg",
+      "featured": true
+    },
+    {
+      "slug": "project-four",
+      "title": "Project Four",
+      "description": "A real-time chat application with end-to-end encryption, file sharing, and video calling capabilities.",
+      "shortDescription": "Encrypted chat application",
+      "type": "Full-Stack",
+      "collaboration": "Solo",
+      "groupSize": 1,
+      "openSource": true,
+      "status": "maintenance",
+      "daysTaken": 60,
+      "tech": ["Next.js", "WebRTC", "PostgreSQL", "Redis"],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/n0ctanedev/project-four"
+        }
+      ],
+      "thumbnail": "/projects/project-four.jpg",
+      "featured": false
+    },
+    {
+      "slug": "project-five",
+      "title": "Project Five",
+      "description": "A design system component library with comprehensive documentation, accessibility support, and theme customization.",
+      "shortDescription": "Component library & design system",
+      "type": "Library",
+      "collaboration": "Solo",
+      "groupSize": 1,
+      "openSource": true,
+      "status": "active",
+      "daysTaken": 120,
+      "tech": ["React", "TypeScript", "Storybook", "CSS"],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/n0ctanedev/project-five"
+        },
+        {
+          "label": "Storybook",
+          "url": "https://project-five-storybook.vercel.app"
+        }
+      ],
+      "thumbnail": "/projects/project-five.jpg",
+      "featured": false
+    }
+  ],
+
+  "experiences": [
+    {
+      "company": "Tech Corp",
+      "role": "Senior Full-Stack Developer",
+      "period": "2022 — Present",
+      "description": "Leading development of microservices architecture and mentoring junior developers. Built internal tooling that reduced deployment time by 60%.",
+      "tech": ["React", "Node.js", "PostgreSQL", "Docker", "Kubernetes"]
+    },
+    {
+      "company": "StartupXYZ",
+      "role": "Full-Stack Developer",
+      "period": "2020 — 2022",
+      "description": "Built the core product from the ground up — a real-time collaboration platform serving 50K+ users. Implemented WebSocket infrastructure and optimized database queries.",
+      "tech": ["Next.js", "TypeScript", "GraphQL", "Redis"]
+    },
+    {
+      "company": "Agency Co",
+      "role": "Junior Developer",
+      "period": "2018 — 2020",
+      "description": "Developed client-facing web applications and internal dashboards. Introduced code review practices and automated testing workflows.",
+      "tech": ["React", "JavaScript", "Python", "Django"]
+    }
+  ],
+
+  "contacts": [
+    {
+      "platform": "GitHub",
+      "label": "@n0ctanedev",
+      "url": "https://github.com/n0ctanedev"
+    },
+    {
+      "platform": "LinkedIn",
+      "label": "N0ctane Dev",
+      "url": "https://linkedin.com/in/n0ctanedev"
+    },
+    {
+      "platform": "Twitter",
+      "label": "@n0ctane",
+      "url": "https://twitter.com/n0ctane"
+    },
+    {
+      "platform": "Email",
+      "label": "hello@n0ctane.dev",
+      "url": "mailto:hello@n0ctane.dev"
+    }
+  ],
+
+  "contactForm": {
+    "action": "mailto:hello@n0ctane.dev",
+    "method": "POST"
+  }
+}
