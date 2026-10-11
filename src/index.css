@@ -1,0 +1,123 @@
+@import "tailwindcss";
+
+*{outline: 2px solid red;}
+
+@font-face {
+  font-family: "Circuit Forem";
+  src: url("/fonts/CircuitForemRegular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-circuit-forem: "Circuit Forem", system-ui, sans-serif;
+
+  --page-bg: #0a0a0a;
+
+  --nbr-bg-glass: rgba(0, 0, 0, 0.78);
+  --nbr-bg-solid: #0a0a0a;
+  --nbr-bg-scrolled: rgba(0, 0, 0, 0.85);
+  --nbr-text: rgba(255, 255, 255, 0.6);
+  --nbr-submenu-bg: rgba(5, 5, 5, 0.95);
+  --nbr-submenu-text: rgba(255, 255, 255, 0.55);
+  --nbr-profile-menu-bg: rgba(5, 5, 5, 0.95);
+  --nbr-profile-text: rgba(255, 255, 255, 0.55);
+  --nbr-mobile-bg: rgba(5, 5, 5, 0.98);
+  --nbr-mobile-text: rgba(255, 255, 255, 0.6);
+  --nbr-mobile-border: rgba(255, 255, 255, 0.05);
+  --nbr-mobile-submenu-text: rgba(255, 255, 255, 0.4);
+  --nbr-dock-bg: rgba(4, 4, 4, 0.88);
+  --nbr-dock-text: rgba(255, 255, 255, 0.45);
+  --nbr-dock-sep: rgba(255, 255, 255, 0.1);
+  --nbr-divider: rgba(255, 255, 255, 0.07);
+  --nbr-shadow: rgba(0, 0, 0, 0.6);
+  --nbr-dock-shadow: rgba(0, 0, 0, 0.55);
+  --nbr-backdrop: rgba(0, 0, 0, 0.45);
+  --nbr-border: rgba(255, 255, 255, 0.07);
+  --nbr-floating-shadow: rgba(0, 0, 0, 0.45);
+
+  --ncb-bg: rgba(255, 255, 255, 0.04);
+  --ncb-border: rgba(255, 255, 255, 0.15);
+  --ncb-text: rgba(255, 255, 255, 0.75);
+  --ncb-text-hover: rgba(255, 255, 255, 0.95);
+  --ncb-cc-inner: rgb(10, 10, 18);
+
+  --nsl-bg: rgba(255, 255, 255, 0.04);
+  --nsl-border: rgba(255, 255, 255, 0.14);
+  --nsl-text: rgba(255, 255, 255, 0.8);
+  --nsl-placeholder: rgba(255, 255, 255, 0.3);
+  --nsl-list-bg: rgba(6, 6, 14, 0.97);
+  --nsl-list-cc-bg: rgba(6, 6, 14, 0.98);
+  --nsl-option-text: rgba(255, 255, 255, 0.7);
+  --nsl-option-text-hover: rgba(255, 255, 255, 0.95);
+  --nsl-cc-bg: rgb(8, 8, 16);
+  --nsl-frame-bg: rgba(255, 255, 255, 0.18);
+  --nsl-frame-hover-bg: rgba(255, 255, 255, 0.32);
+
+  --ntg-track-bg: rgba(255, 255, 255, 0.07);
+  --ntg-track-border: rgba(255, 255, 255, 0.13);
+  --ntg-thumb-bg: rgba(220, 230, 255, 0.65);
+  --ntg-thumb-shadow: rgba(0, 0, 0, 0.4);
+  --ntg-text: rgba(255, 255, 255, 0.7);
+  --ntg-text-hover: rgba(255, 255, 255, 0.95);
+
+  --nt-wrapper-bg: rgba(4, 4, 10, 0.95);
+  --nt-wrapper-shadow: rgba(0, 0, 0, 0.5);
+  --nt-border: rgba(255, 255, 255, 0.04);
+  --nt-striped-bg: rgba(255, 255, 255, 0.018);
+  --nt-text: rgba(255, 255, 255, 0.75);
+  --nt-skeleton-bg: rgba(255, 255, 255, 0.04);
+
+  --nlc-tooltip-bg: rgba(5, 5, 5, 0.95);
+  --nlc-tooltip-text: #fff;
+
+  --nbc-tooltip-bg: rgba(5, 5, 5, 0.95);
+  --nbc-tooltip-text: #fff;
+
+  --ft-link: rgba(255, 255, 255, 0.45);
+  --ft-social: rgba(255, 255, 255, 0.45);
+  --ft-input-bg: rgba(255, 255, 255, 0.04);
+  --ft-input-text: #fff;
+  --ft-input-placeholder: rgba(255, 255, 255, 0.25);
+  --ft-input-focus-bg: rgba(255, 255, 255, 0.06);
+  --ft-btn-hover-text: #fff;
+  --ft-label: rgba(255, 255, 255, 0.35);
+
+  --pb-track-bg: rgba(255, 255, 255, 0.06);
+  --pb-divider: rgba(4, 4, 10, 0.6);
+
+  --cs-scanlines: rgba(0, 0, 0, 0.07);
+
+  --sc-trend-up: #39ff14;
+  --sc-trend-down: #ff00ff;
+  --sc-trend-neutral: rgba(255, 255, 255, 0.45);
+
+  --tl-card-bg: rgba(255, 255, 255, 0.03);
+  --tl-card-hover-bg: rgba(255, 255, 255, 0.07);
+
+  --ni-autofill: #0a0f14;
+
+  --accent-cyan: #00f3ff;
+  --accent-pink: #ff00ff;
+  --accent-green: #00ff88;
+}
+
+/* ===== Hide scrollbar ===== */
+html {
+  scrollbar-width: none;
+}
+html::-webkit-scrollbar {
+  display: none;
+}
+
+/* ===== Navbar wrapper (inline-styled floating) ===== */
+.navbar-fixed-wrap .nbr-pos-static.nbr-bg-glass {
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+}
+
+/* ===== Navbar logo font ===== */
+.nbr-logo-text {
+  font-family: var(--font-circuit-forem) !important;
+}
